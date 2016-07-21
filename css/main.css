@@ -1,0 +1,43 @@
+/* 3. modifica estilo (en hoja externa) 
+se puede aplicar a mas paginas tambien */
+h1{
+	color: red;
+	font-weight:500;
+	font-family: Arial;
+	font-size: 20px;
+}
+h2{
+	color:black;
+	font-size: 16px;
+}
+img{
+	border:blue 1px solid;
+}
+p{
+	color:yellow;
+	font-size: 14px;
+
+.rojos{         /*class selector,altera a todos los de la clase*/
+	color: red;
+}
+
+#primer{			/*id selector. es unico para cada etiqueta id*/
+	 margin-left:500px;
+}
+
+/*descendiente selector : se modifica por ejemplo a todos los p hijos de h1*/
+h1 p{
+	font-size:80 ;
+}
+/*clild selector*/
+li>p{
+	background-color:blue;
+}
+/*universal selector*/
+
+
+/*!important  (permite darle prioridad a una propiedad)*/ 
+li>p{
+font-size: 300; /*se aplica esta propiedad sin importar
+	la prioridad de orden*/
+}
